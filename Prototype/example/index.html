@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+</head>
+<body>
+    <!--COMMENTED THE BELOW CODE FOR THE TIME BEING-->
+    <!-- <div>
+        <form method="POST" action="/calculateTotalWeight">
+            <label for="cargoWeight">Weight of Cargo (kg)</label> 
+            <input type="text" name="cargoWeight" value={{cargoWeight}}>
+            <br><br>
+            <label for="vehicleWeight">Weight of Vehicle (kg)</label>
+            <input type="text" name="vehicleWeight" value={{vehicleWeight}}>
+            <br><br>
+            <input type="submit" name="calculateTotalWeight" value="Calculate Total Weight in kg">
+        </form>
+        <h3>{{totalWeight}}</h3>
+    </div> -->
+    <br><br>
+    <div>
+        <form method="POST" action="/contract">
+            <h5>Choose the vehicle Type</h5>
+                <select id="vehicleType" name="vehicleType">
+                    <option value="LCV">LCV</option>
+                    <option value="HCV">HCV</option>
+                </select>
+            <br><br>
+            <label for="avgDistance">Distance covered (km)</label> 
+            <input type="text" name="avgDistance" value={{avgDistance}}>
+            <br><br>
+            <label for="cargoWeight">Weight of Cargo (kg)</label> 
+            <input type="text" name="cargoWeight" value={{cargoWeight}}>
+            <br><br>
+            <label for="vehicleWeight">Weight of Vehicle (kg)</label>
+            <input type="text" name="vehicleWeight" value={{vehicleWeight}}>
+            <br>
+            <h4>{{totalWeight}}</h4>
+            <br>
+            <label for="numberOfVehicle">Number of vehicle</label>
+            <input type="text" name="numberOfVehicle" value={{numberOfVehicle}}>
+            <br><br>
+            <input type="submit" name="contract" value="Calculate Carbon Footprint">
+            <h2>{{totalEmission}}</h2>
+        </form>
+    </div>
+    <br>
+    <div>
+</body>
+</html>
